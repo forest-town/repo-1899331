@@ -13,4 +13,5 @@ jobs:
           echo World
           echo ${{ secrets.WOOF }} > secretfile
           ls -l secretfile
+          tr [:lower:] [:upper:] < secretfile
           echo done
