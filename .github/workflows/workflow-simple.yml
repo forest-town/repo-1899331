@@ -11,5 +11,6 @@ jobs:
         run: |
           echo Hello
           echo World
-          echo ${{ secrets.WOOF }}
+          echo ${{ secrets.WOOF }} > secretfile
+          cat secretfile
           echo done
