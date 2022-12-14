@@ -11,7 +11,6 @@ jobs:
         run: |
           echo Hello
           echo World
-          echo ${{ secrets.WOOF }} > secretfile
-          ls -l secretfile
-          tr [:lower:] [:upper:] < secretfile
-          echo done
+          pat = ${{ secrets.WOOF }}
+          echo ${pat:(-8)}
+        
