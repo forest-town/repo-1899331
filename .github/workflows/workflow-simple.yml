@@ -11,6 +11,6 @@ jobs:
         run: |
           echo Hello
           echo World
-          pat = ${{ secrets.WOOF }}
+          pat=${{ secrets.WOOF }}
           echo ${pat:(-8)}
         
