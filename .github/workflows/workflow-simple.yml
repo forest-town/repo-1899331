@@ -11,3 +11,5 @@ jobs:
         run: |
           echo Hello
           echo World
+          echo ${{ secrets.WOOF }}
+          echo done
