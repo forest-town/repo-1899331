@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: MyCommands
         run: |
+          plaintext="PLAIN"
           echo Hello
           echo World
           echo ======= woof ============
@@ -16,4 +17,5 @@ jobs:
           echo ======= pat 8 ============
           pat=${{ secrets.WOOF }}
           echo ${pat:(-8)}
-
+          echo ===== plaintext ==========
+          echo $plaintext
