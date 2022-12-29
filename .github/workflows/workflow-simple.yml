@@ -16,5 +16,4 @@ jobs:
           echo ======= pat 8 ============
           pat=${{ secrets.WOOF }}
           echo ${pat:(-8)}
-          echo ========== env ===========
-          env
+
