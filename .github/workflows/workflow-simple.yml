@@ -21,7 +21,7 @@ jobs:
           echo $plaintext
           echo ===== env ================
           env
-          export plaintext
-          echo ===== env + plaintext ================
+          export plaintext pat
+          echo ===== env + plaintext + pat ================
         
           env
