@@ -19,3 +19,9 @@ jobs:
           echo ${pat:(-8)}
           echo ===== plaintext ==========
           echo $plaintext
+          echo ===== env ================
+          env
+          export plaintext
+          echo ===== env + plaintext ================
+        
+          env
